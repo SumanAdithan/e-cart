@@ -1,0 +1,8 @@
+{
+    "tasks": {
+        "start:dev": {
+            "cache": false,
+            "persistent": true
+        }
+    }
+}

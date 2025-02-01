@@ -1,0 +1,19 @@
+{
+    "name": "e-cart",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "packageManager": "pnpm@9.15.1",
+    "scripts": {
+        "dev": "pnpm turbo run start:dev",
+        "build": "turbo run build",
+        "lint": "turbo run lint",
+        "test": "turbo run test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "turbo": "^2.4.0"
+    }
+}
