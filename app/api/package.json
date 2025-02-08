@@ -2,23 +2,27 @@
     "name": "api",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "index.ts",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "build": "tsc",
-        "start": "node ./dist/index.js",
-        "start:dev": "nodemon"
+        "start": "NODE_ENV=production ts-node -r tsconfig-paths/register ./src/index.ts",
+        "start:dev": "nodemon",
+        "seeder": "ts-node -r tsconfig-paths/register src/utils/seeder.ts"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "class-transformer": "^0.5.1",
+        "class-validator": "^0.14.1",
         "dotenv": "^16.4.7",
         "express": "^4.21.2",
         "mongoose": "^8.9.6",
+        "reflect-metadata": "^0.2.2",
         "tsconfig-paths": "^4.2.0"
     },
     "devDependencies": {
+        "@e-cart/types": "workspace:^",
         "@types/express": "^5.0.0",
         "nodemon": "^3.1.9",
         "ts-node": "^10.9.2",

@@ -1,1 +1,4 @@
-app/api/src/config/config.env
+*.env
+node_modules
+.turbo
+api/node_modules
